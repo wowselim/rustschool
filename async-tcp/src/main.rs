@@ -8,7 +8,7 @@ use tokio::sync::broadcast;
 async fn main() {
     let port: u16 = 8080;
     let listener = TcpListener::bind(format!("{}:{}", "localhost", port)).await.unwrap();
-    println!("{}", format!("Accepting connections on port {port}", port = port));
+    println!("Accepting connections on port {port}", port = port);
 
     let (tx, _rx) = broadcast::channel(64);
 
