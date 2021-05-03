@@ -1,0 +1,8 @@
+[package]
+name = "chat"
+version = "1.0.0"
+authors = ["Selim Dincer"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
